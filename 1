@@ -1,0 +1,9 @@
+//In the folder utils, create a file redis.js that contains the class RedisClient
+//RedisClient should have:
+- The constructor that creates a client to Redis
+- An error of the redis client should be displayed in the console, use on('error' of the redis client)
+- A function isAlive that returns true when the connection to Redis is a success otherwise false
+- An async function get that takes a string key as argument and returns the Redis value stored for the key
+- An asycn function that set that takes a string key, a value and a duration n second as arguments to store it in Redis(With an expiration set by the duration argument)
+- An async function del that takes a string key as argument and removes the value in Redis for this key
+- After the class definition, create and export an instance of RedisClient called redisClient
